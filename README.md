@@ -9,23 +9,23 @@ To implement and evaluate a Decision Tree model to classify tumors as benign or 
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Load Data
+1. Load Data
 Import the dataset to initiate the analysis.
 
-2.Explore Data
+2. Explore Data
 Examine the dataset to identify patterns, distributions, and relationships.
 
-3.Select Features
+3. Select Features
 Determine the most important features to enhance model accuracy and efficiency.
 
-4.Split Data
+4. Split Data
 Separate the dataset into training and testing sets for effective validation.
 
-5.Train Model
+5. Train Model
 Use the training data to build and train the model.
 
-6.Evaluate Model
-Measure the model’s performance on the test data with relevant metrics. 
+6. Evaluate Model
+Measure the model’s performance on the test data with relevant metrics.
 
 ## Program:
 ```
@@ -34,7 +34,6 @@ Program to  implement a Decision Tree model for tumor classification.
 Developed by: Ragavi K
 RegisterNumber: 212223040161
 */
-
 # Import the necessary libraries
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -43,9 +42,8 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Step 1: Load the dataset from the provided URL
-url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-ML241EN-SkillsNetwork/labs/datasets/tumor.csv"
-data = pd.read_csv(url)
+# Step 1: Load the dataset
+data = pd.read_csv('tumor.csv')
 
 # Step 2: Explore the dataset
 # Display the first few rows and column names to verify the structure
@@ -82,11 +80,11 @@ plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.title("Confusion Matrix")
 plt.show()
-
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/6806685a-1eb7-4968-bfa2-3f013b12adbb)
+![image](https://github.com/user-attachments/assets/76941d01-8951-4c9f-8cd8-d12a0ddf527e)
+![image](https://github.com/user-attachments/assets/528e7aea-ff29-4a59-8746-7930f6ea9d9a)
 
 ## Result:
 Thus, the Decision Tree model was successfully implemented to classify tumors as benign or malignant, and the model’s performance was evaluated.
